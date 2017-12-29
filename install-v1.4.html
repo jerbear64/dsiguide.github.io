@@ -139,8 +139,6 @@
                     </p>
                     <div class="notice--danger">There is a risk of bricking. Please ensure that all steps are followed correctly, and keep the NAND backup we will create in a safe place.</div>
 
-                    To use the <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme">magnet</a> links on this page, you will need a torrent client like <a href="http://www.deluge-torrent.org/">Deluge</a>.
-
                     <h3 id="what-you-need">What you need</h3>
 
                     <ul>
@@ -149,10 +147,7 @@
                         <li>The latest release of <a href="files/dsi_srl_extract.zip">DSi SRL Extractor (with console_id.py)</a> </li>
                         <li>A twlnf firmware v1.4 installation script for your region (<a href="files/install-1.4-USA.nfs">USA</a> or <a href="files/install-1.4-EUR.nfs">EUR</a>)</li>
                         <li>The latest release of <a href="https://www.python.org/downloads/">Python 3</a></li>
-
-                        <li>The latest release of <a href="files/NUSDownloader_v19_DSi.zip">NUS Downloader (with sort.py)</a> </li>
-
-                        <li><i class="fa fa-magnet" aria-hidden="true" title="This is a magnet link. Use a torrent client to download the file."></i> - <a href="magnet:?xt=urn:btih:8f3e153c0c1b8944e314a1968e1f181674ece4c1&dn=dsikey.bin&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2f9.rarbg.com%3a2710%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2fp4p.arenabg.com%3a1337%2fannounce&tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&tr=http%3a%2f%2ftracker1.wasabii.com.tw%3a6969%2fannounce&tr=http%3a%2f%2fp4p.arenabg.com%3a1337%2fannounce&tr=http%3a%2f%2ftracker.tfile.me%2fannounce&tr=http%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=http%3a%2f%2fexplodie.org%3a6969%2fannounce&tr=http%3a%2f%2ftorrent.gresile.org%2fannounce&tr=http%3a%2f%2ftracker.baravik.org%3a6970%2fannounce&tr=http%3a%2f%2ftracker.aletorrenty.pl%3a2710%2fannounce&tr=udp%3a%2f%2ftracker.aletorrenty.pl%3a2710%2fannounce&tr=udp%3a%2f%2ftracker.piratepublic.com%3a1337%2fannounce&tr=udp%3a%2f%2ftorrent.gresille.org%3a80%2fannounce&tr=udp%3a%2f%2ftracker.kicks-ass.net%3a80%2fannounce&tr=udp%3a%2f%2fzer0day.ch%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.internetwarriors.net%3a1337%2fannounce"><code class="highlighter-rouge">dsikey.bin</code></a></li>
+                        <li>The latest release of <a href="files/NUSDownloader.zip">NUS Downloader (with sort.py)</a> </li>
                         <li>Magic (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ <button id="download_btn">Waiting</button></li>
                     </ul>
 
@@ -187,7 +182,7 @@
                         <li>Click on the film roll icon.</li>
                         <li>Click on the single right arrow (the next to last arrow icon) two times. You will see a new frame be created. </li>
                         <li>Click on the paste button exactly 122 times. </li>
-                        <li>Click the erase button, then the paste button. If twlnf doesn't appear, ensure your SD card is formatted as FAT32.</li>
+                        <li>Click the erase button, then the paste button. If twlnf doesn't appear, ensure your SD card is formatted as FAT32, and that booting to Calender mode is disabled in Flipnote Studio's settings.</li>
                         <li>You are now in twlnf. When prompted, press (A) to create a NAND backup. This will take a few minutes.</li>
                         <li>When the NAND backup is finished, press (B) to exit twlnf. This will power off your device.</li>
                     </ol>
@@ -195,8 +190,6 @@
                     <ol>
                         <li>Insert your DSi's SD card into your PC.</li>
                         <li>Copy <code class="highlighter-rouge">nand.bin</code> to a safe place on your computer. <em>Do not lose this file!</em> It is an essential backup.</li>
-
-                        <li>Place <code class="highlighter-rouge">dsikey.bin</code> in your NUS Downloader folder.</li>
                         <li>Open <code class="highlighter-rouge">NUS Downloader.exe</code> and check the box that says "Create Decryped Contents (*.app)" <em>(Note: Unix-based systems (Mac and Linux, for example) can run the .exe natively using Mono.)</em></li>
                         <li>Uncheck the box that says "Keep Enc. Contents".</li>
                         <li>Select: Database &gt; System (DSi) &gt; System Menu (Launcher) &gt; [Your Region] &gt; v512 </li>
