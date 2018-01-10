@@ -1,0 +1,45 @@
+{
+    "ugopwn":{
+        "type":"direct",
+        "url":"https://jerbear64.github.io/twlguide/files/ugopwn.zip",
+        "steps":[
+            {
+                "type": "extractFile",
+                "path": "DSi SD Card files"
+            }
+        ]
+    },
+
+    "twlnf":{
+        "type":"direct",
+        "url":"https://rikumax25.github.io/dsisetup/localfiles/twlnf.zip",
+        "steps":[
+            {
+                "type": "extractFile",
+                "path": "DSi SD Card files"
+            }
+        ]
+    },
+
+    "dsisrl":{
+        "type":"direct",
+        "url":"https://jerbear64.github.io/twlguide/files/dsi_srl_extract.zip",
+        "steps":[
+            {
+                "type": "extractFile",
+                "path": "PC files/SRL Extractor"
+            }
+        ]
+    },
+
+    "nusdownloader":{
+        "type":"direct",
+        "url":"https://jerbear64.github.io/twlguide/files/NUSDownloader.zip",
+        "steps":[
+            {
+                "type": "extractFile",
+                "path": "PC files"
+            }
+        ]
+    }
+}
