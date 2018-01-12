@@ -16,7 +16,8 @@
         "steps":[
             {
                 "type": "extractFile",
-                "path": "DSi SD Card files"
+                "path": "DSi SD Card files",
+                "rename":{"twlnf.nds":"boot.nds"}
             }
         ]
     },
