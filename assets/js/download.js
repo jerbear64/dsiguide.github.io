@@ -75,7 +75,7 @@
                         getFileBuffer_zip(data, fileStep.file, fileStep.path, fileStep.newName);
                     });
                 } else {
-                    extractZip(data, step.path, step.removePath);
+                    extractZip(data, step.path, step.removePath, step.rename);
                 }
                 break;
 
@@ -263,13 +263,17 @@
         });
     }
 
-    function extractZip(data, path, removePath){
+    function extractZip(data, path, removePath, rename){
         //progress(bufferName, bufferName + ": Extracting");
         var fileCount = 0;
-
         Object.keys(data.files).forEach(function(key){
-            var file = data.files[key];
+            var file = data.files[key];            
             var filename = file.name;
+
+            if(rename != undefined && Object.keys(rename).includes(filename)){
+                filename = rename[filename];
+            }
+
             if(removePath != ""){
                 filename = filename.replace(removePath + "/", "");
             };
