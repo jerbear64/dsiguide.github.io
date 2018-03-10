@@ -6,7 +6,7 @@
 
     <!-- begin SEO -->
 
-    <title>Get Started - TWLguide</title>
+    <title>Installing a Permanent Entrypoint - TWLguide</title>
 
     <meta name="description" content="A reasonably complete guide to DSi hacking, from stock to homebrew.">
 
@@ -14,8 +14,8 @@
     <meta property="og:site_name" content="twlguide">
     <meta property="og:title" content="twlguide">
 
-    <link rel="canonical" href="https://jerbear64.github.io/twlguide/get-started.html">
-    <meta property="og:url" content="https://jerbear64.github.io/twlguide/get-started.html">
+    <link rel="canonical" href="https://jerbear64.github.io/twlguide/install-entrypoint.html">
+    <meta property="og:url" content="https://jerbear64.github.io/twlguide/install-entrypoint.html">
 
     <meta property="og:description" content="A reasonably complete guide to DSi hacking, from stock to homebrew.">
 
@@ -47,12 +47,6 @@
 
     <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
-    <script type="text/javascript">
-        var host = "dsiguide.me";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-            window.location.protocol = "https";
-    </script>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -77,7 +71,7 @@
 
                         <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">Guide</a></li>
                         <li class="masthead__menu-item"><a href="credits.html">Credits</a></li>
-                        <li class="masthead__menu-item"><a href="dumping-dsiwares.html">Dumping DSiWare</a></li>
+			<li class="masthead__menu-item"><a href="dumping-dsiwares.html">Dumping DSiWare</a></li>
                     </ul>
                     <ul class="hidden-links links-menu hidden"></ul>
                     <!--see deleted language from source for the language stuff... you shouldn't be seeing this. stop messing w/ the source!/-->
@@ -97,13 +91,13 @@
 
     <div id="main" role="main">
 
-        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-            <meta itemprop="headline" content="Get Started">
+        <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="Installing v1.4 (ugopwn)">
 
             <div class="page__inner-wrap">
 
                 <header>
-                    <h1 class="page__title" itemprop="headline">Get Started
+                    <h1 class="page__title" itemprop="headline">Installing a Permanent Entrypoint
                     </h1>
 
                 </header>
@@ -133,36 +127,24 @@
 
                     <hr>
 
-                    <p class="notice--primary">This page will assist you in preparing a stock DSi for homebrew access. We will now install some generic tools that are needed for both a 1.4 downgrade (in preparation for RocketLauncher), and for setting up a permanent homebrew entrypoint.</p>
+                    <p class="notice--info">We will now install a permanent entrypoint, to launch homebrew without the need to use ugopwn every time.</p>
 
-                            <p class="notice--info">Before starting, Windows users should enable the option to show file extensions using <a href="https://www.howtohaven.com/system/show-file-extensions-in-windows-explorer.shtml">this guide</a>.</p>
+                    <div class="notice--danger">There is a risk of bricking. Please ensure that all steps are followed correctly, and keep the NAND backup we will create in a safe place.</div>
 
-                                <p class="notice--warning">Before starting, it's a good idea to check your SD card for errors using <a href="http://mympx.org/Downloads/p13_sectionid/2/p13_fileid/13">H2testw (Windows)</a>, <a href="https://github.com/AltraMayor/f3">F3 (Linux)</a>, or <a href="https://github.com/insidegui/F3X">F3X (Mac)</a>.</p>
+                    <h3 id="methods">Methods</h3>
+                    <p>If you already have one of the following titles, follow the <b>Installing a Permanent Entrypoint (already owned title)</b> guide, which contains twlnf scripts to install the hacked save.</p>
+		    <ul>
+			  <li>“Fieldrunners”</li>
+ 			  <li>“Legends of Exidia”</li>
+ 			  <li>“Guitar Rock Tour”</li>
+ 			  <li>“The Legend of Zelda: Four Swords Anniversary”</li>
+		    </ul>
+		    	
+                    <p class="notice--primary">Continue to <a href=install-entrypoint-(preowned-title).html>Installing a Permanent Entrypoint (already owned title)</a></p>
+		    <hr>
 
-                                    <p class="notice--warning">This will not work with Chinese DSi systems (A.K.A. iQue DSi) or Korean DSi systems as none of the exploitable apps have been released there. This guide, for the time being, is also incompatible with European DSi systems, but will be when ugopwn for EU is released.</p>
-                                    <p class="notice--warning">Flipnote Studio must be installed on your DSi system for this to work. Due to ugopwn only being released for USA currently, a United States system is additionally required.</p>
-
-                    <h3 id="instructions">Instructions</h3>
-                    <h3 id="what-you-need">What you need</h3>
-                    <ul id="files">
-                        <li>The latest release of <a href="files/ugopwn.zip">ugopwn</a></li>
-                        <li>The latest release of <a href="https://github.com/Jimmy-Z/twlnf/releases">twlnf</a></li>
-                    </ul>
-
-                    <h4 id="section-i---gathering-files">Section I - Preparation</h4>
-                    <ol>
-                        <li>Insert your system's SD card into your computer.</li>
-                        <li>Copy <em>the contents of</em> <code class="highlighter-rouge">ugopwn.zip</code> to the root of your SD card.</li>
-                        <li>Copy <em>the contents of</em> <code class="highlighter-rouge">twlnf-(version).7z</code> to the root of your SD card, and rename <code class="highlighter-rouge">twlnf.nds</code> to <code class="highlighter-rouge">boot.nds.</code></li>
-                    </ol>
-
-                    <p class="notice--primary">If you are interested in downgrading your DSi's firmware to v1.4 to prepare for RocketLauncher, continue to <a href=install-v1.4.html>Installing v1.4</a>.</p>
-                    
-                    <p class="notice--primary">Otherwise, if you would like to install a permanent homebrew entrypoint, continue to <a href="install-entrypoint.html">Installing a Permanent Entrypoint</a>.</p>
-                    
-
-                                                    </center>
-
+		    <p> Otherwise, follow the <b>Installing a Permanent Entrypoint (sudokuhax)</b> guide, which will install an older version of Sudoku, as well as a corresponding hacked save.</p>
+		    <p class="notice--primary">Continue to <a href=install-entrypoint-(sudokuhax).html>Installing a Permanent Entrypoint (sudokuhax)</a></p>
                 </section>
 
                 <footer class="page__meta">
@@ -182,10 +164,10 @@
 
             <div class="page__footer-copyright">&copy; 2017 jerbear64 - Original guide by <a href="https://github.com/DSiGuide">DSiGuide.me Developers</a> - Site design by <a href="https://github.com/Plailect">Plailect</a> - <a href="https://github.com/jerbear64/twlguide">Source</a>
         </footer>
-        </div>
+    </div>
 
-        <script src="https://3ds.guide/assets/js/main.min.js"></script>
-
+    <script src="https://3ds.guide/assets/js/main.min.js" />
+    <script src="assets/js/download.js"></script>
 </body>
 
 </html>

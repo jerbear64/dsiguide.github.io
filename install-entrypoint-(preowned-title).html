@@ -6,7 +6,7 @@
 
     <!-- begin SEO -->
 
-    <title>Installing v1.4 (ugopwn) - TWLguide</title>
+    <title>Installing a Permanent Entrypoint (pre-owned title)</title>
 
     <meta name="description" content="A reasonably complete guide to DSi hacking, from stock to homebrew.">
 
@@ -14,8 +14,8 @@
     <meta property="og:site_name" content="twlguide">
     <meta property="og:title" content="twlguide">
 
-    <link rel="canonical" href="https://jerbear64.github.io/twlguide/install-v1.4.html">
-    <meta property="og:url" content="https://jerbear64.github.io/twlguide/install-v1.4.html">
+    <link rel="canonical" href="https://jerbear64.github.io/twlguide/install-entrypoint-(preowned-title).html">
+    <meta property="og:url" content="https://jerbear64.github.io/twlguide/install-entrypoint-(preowned-title).html">
 
     <meta property="og:description" content="A reasonably complete guide to DSi hacking, from stock to homebrew.">
 
@@ -98,12 +98,12 @@
     <div id="main" role="main">
 
         <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
-            <meta itemprop="headline" content="Installing v1.4 (ugopwn)">
+            <meta itemprop="headline" content="Installing a Permanent Entrypoint (pre-owned title)">
 
             <div class="page__inner-wrap">
 
                 <header>
-                    <h1 class="page__title" itemprop="headline">Installing v1.4 (ugopwn)
+                    <h1 class="page__title" itemprop="headline">Installing a Permanent Entrypoint (pre-owned title)
                     </h1>
 
                 </header>
@@ -112,7 +112,7 @@
 
                     <hr>
 
-                    <div class="notice"><b>If you need help, ask the <a href="https://discord.gg/8X5ddgH">NDS(i)Brew Scene Discord server</a>!</b></div>
+                    <div class="notice"><b>If you need help, ask the <a href="https://discord.gg/w4SKAr8">NDS(i)Brew Scene Discord server</a>!</b></div>
 
                     <div class="notice"><b>If you would like to donate, you can do so through <a href="https://www.paypal.me/jerbear64">PayPal</a>.</b></div>
 
@@ -133,36 +133,25 @@
 
                     <hr>
 
-                    <p class="notice--info">We will now install firmware version 1.4, in preparation for RocketLauncher.</p>
+                    <p class="notice--info">We will now install install a permanent entrypoint.</p>
                     <p class="notice--warning">Make sure you have followed the <a href="get-started.html">Getting Started</a> page before proceeding.</p>
+                    <p class="notice--warning">4swordshax, like ugopwn, cannot run commercial NDS titles from SRLoader at this time.</p>
                     </p>
-                    <div class="notice--danger">There is a risk of bricking. Please ensure that all steps are followed correctly, and keep the NAND backup we will create in a safe place.</div>
+                    <div class="notice--danger">There is a risk of bricking. Please ensure that all steps are followed correctly, and keep the NAND backup we have already created in a safe place.</div>
 
                     <h3 id="what-you-need">What you need</h3>
 
                     <ul id="files">
-                        <li data-name="dsisrl">The latest release of <a href="files/dsi_srl_extract.zip">DSi SRL Extractor (with console_id.py)</a> </li>
-                        <li>A twlnf firmware v1.4 installation script for your region (<a href="files/install-1.4-USA.nfs">USA</a> or <a href="files/install-1.4-EUR.nfs">EUR</a>)</li>
-                        <li>The latest release of <a href="https://www.python.org/downloads/">Python 3</a></li>
-                        <li data-name="nusdownloader">The latest release of <a href="files/NUSDownloader.zip">NUS Downloader (with sort.py)</a> </li>
-                        <li>Magic (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ<button id="download_btn">Waiting... (Please enable Javascript, this is an download consolidator!)</button></li>
+                        <li>The <a href="files/twlnf-entrypoint-pack.zip">twlnf entrypoint installer pack</a></li>
+                        <li>ugopwn and twlnf. These were installed to your system in the previous section.</li>
                     </ul>
 
-                    
-                    <!-- And this is where it ends and goes to the next step-->
-
                     <h3 id="instructions">Instructions</h3>
-                    <h4 id="section-i---gathering-files">Section I - Gathering the Necessary Files</h4>
+                    <h4 id="section-i--preparing">Section I - Preparing</h4>
 
                     <ol>
-                        <li>Power on your device.</li>
-                        <li>Go to System Settings &gt; Data Management &gt; System Memory &gt; Flipnote Studio (or any other DSiWare) &gt; Copy &gt; Yes, and then exit to the DSi Menu. <em>(If Data Management isn't appearing, open the DSi Shop, close it, and try again.)</em></li>
-                        <li>Power off your device, and insert the device's SD card into your computer. </li>
-                        <li>Copy the twlnf 1.4 installation script for your region to the root of your SD card.</li>
-                        <li>In <code class="highlighter-rouge">generic.zip</code>, copy <code class="highlighter-rouge">PC files</code> to your computer. Open your SD Card's drive, and navigate to Private &gt; DS &gt; Title. Copy your .bin file to your <code class="highlighter-rouge&quot;">SRL Extractor</code> directory. If multiple .bin files are present, only one needs to be copied.</li>
-                        <li>Open your SRL Extractor folder and double-click on <code class="highlighter-rouge">console_id.py</code> to run it. When prompted, press Enter. You will now see a console_id.txt file in the directory. <em>(Note: On Unix-based systems (Mac and Linux, for example), <a href="https://www.winehq.org/">WINE</a> is required for this script to run.)</em></li>
-                        <li>Copy <code class="highlighter-rouge">console_id.txt</code> to the root of your SD card.
-                        </li>
+                        <li>Insert your system's SD card into your computer. </li>
+                        <li>Copy <em>the contents of</em> <code class="highlighter-rouge">twlnf-entrypoint-pack.zip</code> to the root of your SD card.</li>
                         <li>Remove the SD card from your computer, and insert it into the SD card slot on your DSi.</li>
 
                         <li>Power on your DSi, and open Flipnote Studio.</li>
@@ -179,40 +168,36 @@
                         <li>Click on the single right arrow (the next to last arrow icon) two times. You will see a new frame be created. </li>
                         <li>Click on the paste button exactly 122 times. </li>
                         <li>Click the erase button, then the paste button. If twlnf doesn't appear, ensure your SD card is formatted as FAT32, and that booting to Calender mode is disabled in Flipnote Studio's settings.</li>
-                        <li>You are now in twlnf. When prompted, press (A) to create a NAND backup. This will take a few minutes.</li>
-                        <li>When the NAND backup is finished, press (B) to exit twlnf. This will power off your device.</li>
+                        <li>You are now in twlnf. When prompted, press (X) to mount the NAND directly. <em>(twlnf does not list this as an option.)</em></li>
                     </ol>
-                    <h4 id="section-ii---nus">Section II - Downloading v1.4 Files</h4>
+                    <h4 id="section-ii--installing-entrypoint">Section II - Installing your Permanent Entrypoint</h4>
                     <ol>
-                        <li>Insert your DSi's SD card into your PC.</li>
-                        <li>Copy <code class="highlighter-rouge">nand.bin</code> to a safe place on your computer. <em>Do not lose this file!</em> It is an essential backup.</li>
-                        <li>Open <code class="highlighter-rouge">NUS Downloader.exe</code> and check the box that says "Create Decryped Contents (*.app)" <em>(Note: Unix-based systems (Mac and Linux, for example) can run the .exe natively using Mono.)</em></li>
-                        <li>Uncheck the box that says "Keep Enc. Contents".</li>
-                        <li>Select: Database &gt; System (DSi) &gt; System Menu (Launcher) &gt; [Your Region] &gt; v512 </li>
-                        <li>Select "Start NUS Download!"</li>
-                        <li>When done, select: Database &gt; System (DSi) &gt; Nintendo DS Cart Whitelist &gt; All &gt; v256 </li>
-                        <li>Select "Start NUS Download!"</li>
-                        <li>When done, select: Database &gt; System (DSi) &gt; System Settings &gt; [Your Region] &gt; v512 </li>
-                        <li>Select "Start NUS Download!"</li>
-                        <li>When done, select: Database &gt; System (DSi) &gt; Version Data &gt; [Your Region] &gt; v4 (China) </li>
-                        <li>Select "Start NUS Download!"</li>
-                        <li>Exit NUS Downloader, and run <code class=="highlighter-rouge">sort.py</code> to prepare the titles for installation. When prompted, press Enter.</li>
-                        <li>You now have a new folder called <code class="highlighter-rouge">title</code> in your NUS Downloader directory. Copy this folder to the root of your SD card.</li>
-                        <li>Unplug your SD card, and insert it in your DSi.</li>
-                    </ol>
-                    <h4 id="section-iii-installing">Section III - Installing System Version 1.4</h4>
-                    <ol>
-                        <li>We are now modifying the DSi NAND directly. Ensure your DSi is plugged in and has a full battery.</li>
-                        <li>Repeat steps 9-22 of Section I to run twlnf.</li>
-                        <li>Wait for twlnf to load. When prompted, press (X) to mount the NAND directly. <em>(twlnf does not list this as an option.)</em></li>
-                        <li>Navigate to <code class="highlighter-rouge">install-1.4-(your region).nfs</code>. Press (A) to execute.</li>
-                        <li>twlnf will now verify that all files are in place. When prompted, press (A) to continue.</li>
-                        <li>twlnf is now installing firmware version 1.4 on your DSi. When <code class="highlighter-rouge">execution returned 0</code> appears, the script has finished executing.</li>
+                        <li>Navigate to the .nfs script corresponding with your pre-install DSiWare title.</li>
+                        <ul>
+                            <li>Fieldrunners - <code class="highlighter-rouge">install_fieldrunhax_usa.nfs</code></li>
+                            <li>Legends of Exidia - <code class="highlighter-rouge">install_exidiahax_usa.nfs</code></li>
+                            <li>Guitar Rock Tour - <code class="highlighter-rouge">install_grtpwn_usa.nfs</code></li>
+                            <li>The Legend of Zelda: Four Swords Anniversary - <code class="highlighter-rouge">install_4swordshax_usa.nfs</code></li>
+                        </ul>
+
+                        <li>Press (A) to execute your script of choice.</li>
+                        <li>twlnf will now verify that all files are in place. This script <em>will fail</em> if you don't have the DSiWare installed. When prompted, press (A) to continue.</li>
+                        <li>twlnf is now installing your permanent entrypoint. When <code class="highlighter-rouge">execution returned 0</code> appears, the script has finished executing.</li>
                         <li>Press (SELECT) to quit twlnf, then (A) to confirm. Your DSi will power off.</li>
-                        <li>Power on your DSi, navigate to System Settings, and verify that your system version is now 1.4.</li>
+                        <li>Power on your DSi, and launch your exploited DSiWare.</li>
                     </ol>
 
-                    <p class="notice--primary">If you would like to install a permanent homebrew entrypoint, continue to <a href="install-entrypoint.html">Installing a Permanent Entrypoint</a>.</p>
+                    <h4 id="section-iii--launching-entrypoint">Section III - Launching your Permanent Entrypoint</h4>
+                        Each of the four entrypoints are triggered in different ways.
+                        <ul>
+                                <li>Fieldrunners - Wait for the game to load. On the main menu, press "Scores".</li>
+                                <li>Legends of Exidia - Go past the two start screens. Select the first save file, and press "Continue".</li>
+                                <li>Guitar Rock Tour - Scroll down. Press "High Scores", then "Drums", then "Easy".</li>
+                                <li>The Legend of Zelda: Four Swords Anniversary - Launch the game. 4swordshax works immediately, with no user intervention required.</li>
+                        </ul>
+                        These entrypoints will load whatever homebrew you have on your SD card as <code class="highlighter-rouge">boot.nds</code>. Currently, this is twlnf.
+                        It is recommended that you install <a href="https://github.com/Robz8/SRLoader/releases">SRLoader</a>, as it can launch both commercial ROMs and homebrew, and has several emulators built in.
+                    <p class="notice--primary">You may now run homebrew at any time using your entrypoint of choice.</a>
 
                     </p>
                 </section>
