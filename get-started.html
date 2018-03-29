@@ -147,13 +147,22 @@
                     <ul id="files">
                         <li>The latest release of <a href="files/ugopwn.zip">ugopwn</a></li>
                         <li>The latest release of <a href="https://github.com/Jimmy-Z/twlnf/releases">twlnf</a></li>
+                        <li>The latest release of <a href="https://www.python.org/downloads/">Python 3</a></li>
+                        <li data-name="dsisrl">The latest release of <a href="files/dsi_srl_extract.zip">DSi SRL Extractor (with console_id.py)</a> </li>
                     </ul>
 
                     <h4 id="section-i---gathering-files">Section I - Preparation</h4>
                     <ol>
-                        <li>Insert your system's SD card into your computer.</li>
-                        <li>Copy <em>the contents of</em> <code class="highlighter-rouge">ugopwn.zip</code> to the root of your SD card.</li>
-                        <li>Copy <em>the contents of</em> <code class="highlighter-rouge">twlnf-(version).7z</code> to the root of your SD card, and rename <code class="highlighter-rouge">twlnf.nds</code> to <code class="highlighter-rouge">boot.nds</code.></li>
+                        <li>Power on your device.</li>
+                            <li>Go to System Settings &gt; Data Management &gt; System Memory &gt; Flipnote Studio (or any other DSiWare) &gt; Copy &gt; Yes, and then exit to the DSi Menu. <em>(If Data Management isn't appearing, open the DSi Shop, close it, and try again.)</em></li>
+                            <li>Power off your device, and insert the device's SD card into your computer. </li>
+                            <li>Copy the twlnf 1.4 installation script for your region to the root of your SD card.</li>
+                            <li>Copy <em>the contents of</em> <code class="highlighter-rouge">ugopwn.zip</code> to the root of your SD card.</li>
+                            <li>Copy <em>the contents of</em> <code class="highlighter-rouge">twlnf-(version).7z</code> to the root of your SD card, and rename <code class="highlighter-rouge">twlnf.nds</code> to <code class="highlighter-rouge">boot.nds</code>.</li>
+                            <li>Copy <em>the contents of</em> <code class="highlighter-rouge">dsi_srl_extract.zip</code> to a folder on your computer. Open your SD Card's drive, and navigate to Private &gt; DS &gt; Title. Copy your .bin file to your SRL Extractor directory. If multiple .bin files are present, only one needs to be copied.</li>
+                            <li>Open your SRL Extractor folder and double-click on <code class="highlighter-rouge">console_id.py</code> to run it. When prompted, press Enter. You will now see a console_id.txt file in the directory. <em>(Note: On Unix-based systems (Mac and Linux, for example), <a href="https://www.winehq.org/">WINE</a> is required for this script to run.)</em></li>
+                            <li>Copy <code class="highlighter-rouge">console_id.txt</code> to the root of your SD card.</li>
+                        <li>Remove the SD card from your computer, and insert it into the SD card slot on your DSi.</li>
                     </ol>
 
                     <p class="notice--primary">If you are interested in downgrading your DSi's firmware to v1.4 to prepare for RocketLauncher, continue to <a href=install-v1.4.html>Installing v1.4</a>.</p>
